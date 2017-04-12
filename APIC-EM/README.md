@@ -12,7 +12,7 @@ In this demo we're using an APIC-EM VM off of the Flat L2 network in VIRL and th
 		!
 		pnp profile pnp-zero-touch 
 		transport http ipv4 10.1.1.10 port 80 
-	end```
+	end
 ## Files used
 - pnp.virl
 - hub.txt
