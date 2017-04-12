@@ -6,13 +6,13 @@ In this demo we're using an APIC-EM VM off of the Flat L2 network in VIRL and th
 - Start simulation in VIRL
 - Use this config snippet to simulate either someone boot strapping the route with the PnP app or the cloud PnP service:
 - - ```
-		conf t
-		int gi0/1
-		no shut
-		ip add dhcp
-		!
-		pnp profile pnp-zero-touch 
-		transport http ipv4 10.1.1.10 port 80 
+	conf t
+	int gi0/1
+	no shut
+	ip add dhcp
+	!
+	pnp profile pnp-zero-touch 
+	transport http ipv4 10.1.1.10 port 80 
 ## Files used
 - pnp.virl
 - hub.txt
