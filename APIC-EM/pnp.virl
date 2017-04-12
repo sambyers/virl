@@ -9,7 +9,7 @@
             <entry key="AutoNetkit.mgmt_ip" type="string"></entry>
             <entry key="Auto-generate config" type="Boolean">false</entry>
             <entry key="config" type="String">!
-! Last configuration change at 00:58:51 UTC Wed Apr 12 2017
+! Last configuration change at 02:08:16 UTC Wed Apr 12 2017
 !
 version 15.2
 service timestamps debug datetime msec
@@ -38,7 +38,6 @@ ip dhcp excluded-address 10.1.4.1 10.1.4.14
 !
 ip dhcp pool pnp-pool
  network 10.1.1.0 255.255.255.0
- default-router 10.1.1.1 
  option 43 ascii "5AD;K4;B2;I10.1.1.10;J80"
 !
 ip dhcp pool vlan12
@@ -110,7 +109,7 @@ interface GigabitEthernet1/1
  negotiation auto
 !
 interface Vlan1
- ip address 10.1.1.1 255.255.255.0
+ ip address 10.1.1.254 255.255.255.0
 !
 interface Vlan12
  ip address 10.1.2.254 255.255.255.0
@@ -164,6 +163,7 @@ banner login `
 line con 0
 line aux 0
 line vty 0 4
+ login
 !
 !
 end</entry>

@@ -5,7 +5,6 @@ username cisco privilege 15 secret cisco
 !
 interface gi0/1
 no ip add
-no shut
 !
 interface gi0/1.1
 en do 1 native
