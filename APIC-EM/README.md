@@ -18,9 +18,9 @@ In this demo we're using an APIC-EM VM off of the Flat L2 network in VIRL and th
 - Do the same for spoke2, spoke3, and spoke4
 - You'll probably need to add routes in APIC-EM to reach the spokes, as usually DHCP would give the spoke routers IP addresses that would be routable from the controller
 - - ```
-	ip route 10.1.2.0/24 via 10.1.1.1
-	ip route 10.1.3.0/24 via 10.1.1.1
-	ip route 10.1.4.0/24 via 10.1.1.1
+	ip route add 10.1.2.0/24 via 10.1.1.1
+	ip route add 10.1.3.0/24 via 10.1.1.1
+	ip route add 10.1.4.0/24 via 10.1.1.1
 ## Files used
 - pnp.virl
 - hub.txt
