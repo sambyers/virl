@@ -9,7 +9,7 @@ no shut
 !
 interface gi0/1.1
 en do 1 native
-ip add dhcp
+ip add 10.1.1.1 255.255.255.0
 !
 interface gi0/1.12
 en do 12
