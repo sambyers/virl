@@ -6,3 +6,6 @@
 *.pyc
 .env
 .virlrc
+.virl/
+html_logs/
+__pycache__

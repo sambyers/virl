@@ -1,6 +1,6 @@
 testbed:
 
-  name: net_dev_test_example_default_qjMP08
+  name: pyats-example-1_default_lrw5aC
 
   tacacs:
     username: "%ENV{PYATS_USERNAME}"
@@ -10,7 +10,7 @@ testbed:
     line: "%ENV{PYATS_PASSWORD}"
   servers:
     ~mgmt-lxc:
-      address: 172.16.1.74
+      address: 172.16.1.53
       server: ~mgmt-lxc
 
 devices:
@@ -27,7 +27,7 @@ devices:
         class: unicon.Unicon
       console:
         protocol: telnet
-        ip: 10.82.12.236
+        ip: 10.82.12.238
         port: 17000
     custom:
       abstraction:
@@ -45,7 +45,7 @@ devices:
         class: unicon.Unicon
       console:
         protocol: telnet
-        ip: 10.82.12.236
+        ip: 10.82.12.238
         port: 17002
     custom:
       abstraction:
@@ -63,7 +63,7 @@ devices:
         class: unicon.Unicon
       console:
         protocol: telnet
-        ip: 10.82.12.236
+        ip: 10.82.12.238
         port: 17004
     custom:
       abstraction:
@@ -81,7 +81,7 @@ devices:
         class: unicon.Unicon
       console:
         protocol: telnet
-        ip: 10.82.12.236
+        ip: 10.82.12.238
         port: 17006
     custom:
       abstraction:
@@ -99,7 +99,7 @@ devices:
         class: unicon.Unicon
       console:
         protocol: telnet
-        ip: 10.82.12.236
+        ip: 10.82.12.238
         port: 17008
     custom:
       abstraction:
@@ -117,7 +117,7 @@ devices:
         class: unicon.Unicon
       console:
         protocol: telnet
-        ip: 10.82.12.236
+        ip: 10.82.12.238
         port: 17010
     custom:
       abstraction:
@@ -135,8 +135,8 @@ topology:
         link: router1-to-router4
         type: ethernet
       GigabitEthernet1:
-        ipv4: 10.255.0.119/16
-        link: cisco
+        ipv4: 10.255.0.15/16
+        link: guest
         type: ethernet
   router2:
     interfaces:
@@ -149,8 +149,8 @@ topology:
         link: router2-to-router5
         type: ethernet
       GigabitEthernet1:
-        ipv4: 10.255.0.120/16
-        link: cisco
+        ipv4: 10.255.0.16/16
+        link: guest
         type: ethernet
   router3:
     interfaces:
@@ -159,8 +159,8 @@ topology:
         link: router3-to-router4
         type: ethernet
       GigabitEthernet1:
-        ipv4: 10.255.0.121/16
-        link: cisco
+        ipv4: 10.255.0.17/16
+        link: guest
         type: ethernet
   router4:
     interfaces:
@@ -177,8 +177,8 @@ topology:
         link: router1-to-router4
         type: ethernet
       GigabitEthernet1:
-        ipv4: 10.255.0.122/16
-        link: cisco
+        ipv4: 10.255.0.18/16
+        link: guest
         type: ethernet
   router5:
     interfaces:
@@ -195,8 +195,8 @@ topology:
         link: router2-to-router5
         type: ethernet
       GigabitEthernet1:
-        ipv4: 10.255.0.123/16
-        link: cisco
+        ipv4: 10.255.0.19/16
+        link: guest
         type: ethernet
   router6:
     interfaces:
@@ -205,6 +205,6 @@ topology:
         link: router5-to-router6
         type: ethernet
       GigabitEthernet1:
-        ipv4: 10.255.0.124/16
-        link: cisco
+        ipv4: 10.255.0.20/16
+        link: guest
         type: ethernet
